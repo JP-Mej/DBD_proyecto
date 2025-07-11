@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro</title>
+  <link rel="stylesheet" href="stylesRegistro.css" />
+</head>
+<body>
+
+    <header class="header">
+      <h1 class="header-title">Inicio > Registro</h1>
+    </header>
+  <div class="container">
+    <main class="content">
+      <form class="register-form">
+        <div class="form-group">
+          <label for="username">Registro:</label>
+          <input type="text" id="username" placeholder="Ingresa el nombre de usuario" required />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Datos personales:</label>
+          <input type="text" id="name" placeholder="Ingrese su primer nombre:" required />
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="middlename" placeholder="Ingrese su segundo nombre:" required />
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="lastnameP" placeholder="Ingrese su apellido paterno:" required />
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="lastnameM" placeholder="Ingrese su apellido materno:" required />
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Introduzca su correo:" required />
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Introduzca su contraseña" required />
+          <span class="eye-icon">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="#6C757D" viewBox="0 0 24 24" width="20" height="20">
+        <path d="M12 4.5C7.305 4.5 3.173 7.614 1.5 12c1.673 4.386 5.805 7.5 10.5 7.5s8.827-3.114 10.5-7.5C20.827 7.614 16.695 4.5 12 4.5zm0 12a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-1.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </svg>
+          </span>
+        </div>
+
+        <div class="terms-group">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">Acepto los términos y condiciones de este sitio web, así como el almacenamiento y tratamiento de mis datos</label>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" class="register-btn">Registrarse</button>
+            <button type="button" class="cancel-btn">Cancelar</button>
+        </div>
+
+
+        <p class="login-link">¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+      </form>
+    </main>
+  </div>
+  <script src="scriptRegistro.js"></script>
+</body>
+</html>

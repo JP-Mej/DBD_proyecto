@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  background-color: #2C003E;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.user-icon svg {
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.welcome-message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+label[for="username"],
+label[for="name"] {
+  font-size: 1.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 900px;
+  font-size: 1rem;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye-icon svg {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.terms-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.terms-group input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.register-btn,
+.cancel-btn {
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  width: 100%;
+  max-width: 180px;
+  text-align: center;
+}
+
+.register-btn:hover,
+.cancel-btn:hover {
+  background-color: #E64A19;
+  transform: scale(1.05);
+}
+
+
+.login-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}

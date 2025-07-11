@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel Principal</title>
+  <link rel="stylesheet" href="stylesPanel.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="business-info">
+        <img src="logo.png" alt="Logo del negocio" class="business-logo">
+        <h2 class="business-name">Nombre del negocio</h2>
+      </div>
+      <hr>
+      <div class="user-info">
+        <div class="user-photo-container">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/409/979/large_2x/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-flat-style-user-icon-set-vector.jpg" alt="Foto de usuario" class="user-photo">
+        </div>
+         <h3>Datos personales:</h3>
+        <ul>
+          <li><strong>Usuario:</strong> Gabo</li>
+          <li><strong>Nombres:</strong> We</li>
+          <li><strong>Apellidos:</strong> Bom</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <header class="header">
+        <div class="header-title">Panel principal</div>
+        <div class="header-actions">
+          <button class="logout-btn">
+            Salir
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <section class="main-section">
+        <div class="results-grid">
+         
+        <div class="result-column">    
+        <button class="result-card" onclick="location.href='evaluaciones.html'">
+            <div class="result-header">
+              <span class="icon">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M1.99219 19H4.99219M7.99219 19H4.99219M4.99219 19V16M4.99219 19V22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 2L16.5 2L21 6.5V19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 22H16.5C17.3284 22 18 21.3284 18 20.5V8.74853C18 8.5894 17.9368 8.43679 17.8243 8.32426L14.6757 5.17574C14.5632 5.06321 14.4106 5 14.2515 5H4.5C3.67157 5 3 5.67157 3 6.5V13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 5V8.4C14 8.73137 14.2686 9 14.6 9H18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </span>
+              <span class="label">Hacer evaluaciones</span>
+            </div>
+        </button>
+        </div>
+
+        <div class="result-column"> 
+        <button class="result-card" onclick="location.href='resultados.html'">
+            <div class="result-header">
+              <span class="icon">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M4 21.4V2.6C4 2.26863 4.26863 2 4.6 2H16.2515C16.4106 2 16.5632 2.06321 16.6757 2.17574L19.8243 5.32426C19.9368 5.43679 20 5.5894 20 5.74853V21.4C20 21.7314 19.7314 22 19.4 22H4.6C4.26863 22 4 21.7314 4 21.4Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.6349 10.4151L11.674 8.21211C11.8073 7.9293 12.1927 7.9293 12.326 8.21211L13.3651 10.4151L15.6886 10.7706C15.9867 10.8162 16.1055 11.1997 15.8897 11.4198L14.2087 13.1334L14.6054 15.5543C14.6564 15.8652 14.3446 16.1022 14.0778 15.9554L12 14.8118L9.92219 15.9554C9.65544 16.1022 9.34363 15.8652 9.39458 15.5543L9.7913 13.1334L8.1103 11.4198C7.89447 11.1997 8.01329 10.8162 8.31141 10.7706L10.6349 10.4151Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 2V5.4C16 5.73137 16.2686 6 16.6 6H20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </span>
+              <span class="label">Ver resultados</span>
+              </div>
+        </button>
+              <div class="result-list">
+                <!-- Aquí el JS insertará dinámicamente los resultados del estudiante -->
+              </div>
+
+            </div>
+           </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="scriptPanel.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confirmación de Evaluación</title>
+    <link rel="stylesheet" href="stylesEvaluaciones.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>¿Estás seguro que quieres realizar la prueba?</h1>
+      <p>⚠️ Solo tienes <strong>1 intento</strong></p>
+      <p>⏳ Dispones de <strong>2 horas</strong> para completarla</p>
+
+      <div class="button-group">
+        <button class="button iniciar" onclick="iniciarEvaluacion()">
+          Iniciar evaluación
+        </button>
+        <button
+          class="button regresar"
+          onclick="window.location.href='Panel.html'"
+        >
+          Regresar
+        </button>
+      </div>
+    </div>
+
+    <script src="evaluaciones.js"></script>
+  </body>
+</html>

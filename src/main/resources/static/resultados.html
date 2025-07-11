@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel principal &gt; Resultados</title>
+    <link rel="stylesheet" href="stylesResultados.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <span>Panel principal &gt; Resultados</span>
+        </div>
+        <a href="Panel.html" class="volver-btn">Volver <span class="icon">&#8634;</span></a>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th class="nombre-eval">&gt; Nombre de la evaluación</th>
+                    <th class="nota">Nota <span class="icon">&#128196;</span></th>
+                </tr>
+            </thead>
+            <tbody id="evaluaciones-body">
+                <!-- JS insertará aquí las filas dinámicamente -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="scriptResultados.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesInicioSesion.css">
+</head>
+<body>
+
+  <header class="header">
+      <h1 class="header-title">Inicio</h1>
+  </header>
+
+  <div class="container">
+
+    <main class="content">
+      <div class="user-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="url(#gradUsuario)"  fill="none" stroke-width="1.5"  class="size-6">
+            <defs>
+                <linearGradient id="gradUsuario" x1="0%" y1="0%" x2="100%" y2="100%">
+                     <stop offset="0%" stop-color="#00D1B2" />
+                     <stop offset="100%" stop-color="#007CF0" />
+                </linearGradient>
+            </defs>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+        </svg>
+      </div>
+      <p class="welcome-message">Bienvenido a (nombre), por favor inicie sesión</p>
+
+      <form class="login-form">
+  <div class="form-group" style="width: 70%; margin: 0 auto;">
+    <input type="text" id="username" placeholder="Usuario:" required>
+  </div>
+
+  <div class="form-group" style="width: 70%; margin: 0 auto;">
+    <input type="password" id="password" placeholder="Contraseña:" required>
+    <button type="button" class="eye-icon" tabindex="-1">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#6C757D" viewBox="0 0 24 24" width="20" height="20">
+        <path d="M12 4.5C7.305 4.5 3.173 7.614 1.5 12c1.673 4.386 5.805 7.5 10.5 7.5s8.827-3.114 10.5-7.5C20.827 7.614 16.695 4.5 12 4.5zm0 12a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-1.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </svg>
+    </button>
+  </div>
+
+  <button type="submit" class="login-btn">Iniciar sesión</button>
+  <p class="register-link">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+</form>
+
+    </main>
+  </div>
+  <script src="scriptInicioSesion.js"></script>
+</body>
+</html>
