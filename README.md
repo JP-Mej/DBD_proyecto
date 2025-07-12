@@ -7,13 +7,13 @@ Este proyecto implementa una solución integral para la gestión y aplicación d
 ## 📁 Estructura del Proyecto
 
 dbd/
-├── pom.xml # Archivo de configuración Maven
+├── pom.xml                 # Archivo de configuración Maven
 ├── src/
-│ ├── main/
-│ │ ├── java/ # Código fuente Java
-│ │ └── resources/ # Recursos de configuración, SQL, etc.
-│ └── test/ # Pruebas unitarias (si están definidas)
-├── .git/ # Carpeta del repositorio Git
+│   ├── main/
+│   │   ├── java/           # Código fuente Java
+│   │   └── resources/      # Recursos de configuración, SQL, etc.
+│   └── test/               # Pruebas unitarias (si están definidas)
+├── .git/                   # Carpeta del repositorio Git
 
 
 
